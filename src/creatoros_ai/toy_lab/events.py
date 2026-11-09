@@ -23,7 +23,7 @@ class Event:
     
 class EventStore:
     def __init__(self):
-        self.events: dict[self, Event] = {}
+        self.events: dict[str, Event] = {}
         
         # Maps a logical request to its original result.
         self.requests: dict[
